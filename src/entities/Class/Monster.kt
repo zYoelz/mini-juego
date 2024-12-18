@@ -12,7 +12,8 @@ class Monster(
     maxLife: Int,
     criticRate: Int,
     magicDefense: Int,
-    var drop:ArrayList<Object>
-): Basic(name, id, strength, intelligence, dexterity, attack, magicAttack, defense, maxLife, criticRate, magicDefense) {
+    override var drop: ArrayList<Object>,
+    ): Basic(name, id, strength, intelligence, dexterity, attack, magicAttack, defense, maxLife, criticRate, magicDefense),InterfaceMonster {
+
 
 }
