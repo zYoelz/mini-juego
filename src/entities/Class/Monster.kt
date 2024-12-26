@@ -14,6 +14,9 @@ class Monster(
     magicDefense: Int,
     override var drop: ArrayList<Object>,
     ): Basic(name, id, strength, intelligence, dexterity, attack, magicAttack, defense, maxLife, criticRate, magicDefense),InterfaceMonster {
+    override fun dropped(drop: ArrayList<Object>): Object {
+        TODO("Not yet implemented")
+    }
 
 
 }
