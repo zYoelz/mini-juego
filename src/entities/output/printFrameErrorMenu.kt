@@ -1,6 +1,7 @@
 package entities.output
-
-fun printFrameErrorMenu(charPerLine: Int, totalLines: Int) {
+import config.charPerLine
+import config.totalLines
+fun printFrameErrorMenu() {
 
     var lines = totalLines - 15
     val rest = lines % 2

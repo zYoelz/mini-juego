@@ -1,6 +1,7 @@
 package entities.output
-
-fun printFrameEnd(charPerLine: Int, totalLines: Int){
+import config.charPerLine
+import config.totalLines
+fun printFrameEnd(){
 
     var lines = totalLines - 15
     val rest = lines % 2

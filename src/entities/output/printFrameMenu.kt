@@ -1,6 +1,9 @@
 package entities.output
 
-fun printFrameMenu(charPerLine: Int, totalLines: Int) {
+import config.charPerLine
+import config.totalLines
+
+fun printFrameMenu() {
     var lines = totalLines - 15
     val rest = lines%2
     var lineaAdd = 0

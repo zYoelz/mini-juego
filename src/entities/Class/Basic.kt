@@ -1,5 +1,7 @@
 package entities.Class
 
+import balanceConfig
+
 open class Basic(
     override val name: String,
     override var strength: Int,
@@ -14,27 +16,27 @@ open class Basic(
 
 ): interfaceBasic {
     override fun getAttack(strength: Int) {
-        TODO("Not yet implemented")
+        attack = balanceConfig.attackConfig * strength
     }
 
     override fun getMagicAttack(intelligence: Int) {
-        TODO("Not yet implemented")
+        magicAttack =balanceConfig.magicAttackConfig * intelligence
     }
 
     override fun getDefense(strength: Int, dexterity: Int) {
-        TODO("Not yet implemented")
+        defense = balanceConfig.defenseConfig*(strength + 0.2 * dexterity).toInt()
     }
 
     override fun getMagicDefense(intelligence: Int, dexterity: Int) {
-        TODO("Not yet implemented")
+        magicDefense = balanceConfig.magicDefenseConfig*(intelligence + 0.2 * dexterity).toInt()
     }
 
     override fun getMaxLife(strength: Int, intelligence: Int) {
-        TODO("Not yet implemented")
+        maxLife =balanceConfig.maxLifeConfig*( 10* strength + 10 * intelligence )
     }
 
     override fun getCriticRate(dexterity: Int) {
-        TODO("Not yet implemented")
+        criticRate = balanceConfig.criticRateConfig*(5 + (0.2 * dexterity).toInt())
     }
 
 

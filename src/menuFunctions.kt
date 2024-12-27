@@ -1,11 +1,11 @@
 import entities.output.printFrameMenu
 import entities.output.printFrameOptionNoValid
 
-fun menu(charPerLine:Int,totalLines:Int): Int {
+fun menu(): Int {
 
     var repeat:Int
     do {
-        printFrameMenu(charPerLine,totalLines)
+        printFrameMenu()
         val decision = readlnOrNull()?:"0"
         when (decision) {
             "1" -> return 1
@@ -13,7 +13,7 @@ fun menu(charPerLine:Int,totalLines:Int): Int {
             "0" -> return 0
 
             else -> {
-                printFrameOptionNoValid(charPerLine, totalLines)
+                printFrameOptionNoValid()
                 Thread.sleep(2000)
                 repeat = 1
             }
