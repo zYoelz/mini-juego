@@ -1,31 +1,13 @@
 package entities.output
 
 import config.charPerLine
-import config.totalLines
+
 
 fun printFrameMenu() {
-    var lines = totalLines - 15
-    val rest = lines%2
-    var lineaAdd = 0
-    if (rest==0) {
-        lines /= 2
-
-    } else {
-        lines = (lines - 1) / 2
-        lineaAdd = 1
-    }
-
-    println(
-        "+".repeat(charPerLine)
-    )
-    println(
-        "+" + " ".repeat(charPerLine - 2) + "+"
-    )
-    for (i in 1..lines) {
-        println(
-            "+" + " ".repeat(charPerLine - 2) + "+"
-        )
-    }
+    val occupiedLines = 15
+    val addStartLines = 0
+    val addEndLines = 0
+    val lineaAdd = printFlamesStartLines(occupiedLines,addStartLines)
     println(
         "+" + " ".repeat((charPerLine - 2 - "+               Bienvenido a Fisterra's Dungeon              +".length) / 2) + "+".repeat(
             "+               Bienvenido a Fisterra's Dungeon              +".length
@@ -76,16 +58,6 @@ fun printFrameMenu() {
             (charPerLine - 2 - "0 - > Salir de Fisterra's Dungeon ".length) / 2
         ) + "+"
     )
-    for (i in 1..lines) {
-        println(
-            "+" + " ".repeat(charPerLine - 2) + "+"
-        )
-    }
-    println(
-        "+" + " ".repeat(charPerLine - 2) + "+"
-    )
-    println(
-        "+".repeat(charPerLine)
-    )
+    printFramesEndLines(occupiedLines,addEndLines)
 
 }

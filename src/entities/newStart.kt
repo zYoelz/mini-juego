@@ -1,5 +1,8 @@
 package entities
 
-fun newStart(charPerLine:Int, totalLines:Int){
+import entities.output.printFramesIntroduction
+
+fun newStart() {
+    printFramesIntroduction()
 
 }
