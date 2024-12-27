@@ -2,7 +2,6 @@ package entities.Class
 
 open class Basic(
     override val name: String,
-    override val id: Int,
     override var strength: Int,
     override var intelligence: Int,
     override var dexterity: Int,

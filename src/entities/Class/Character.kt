@@ -3,7 +3,6 @@ package entities.Class
 class Character(
 
     name: String,
-    id: Int,
     strength: Int,
     intelligence: Int,
     dexterity: Int, attack: Int,
@@ -15,7 +14,7 @@ class Character(
     override val nick: String,
     override val gear: ArrayList<Object>,
     override val characterClass: String
-) : Basic(name, id, strength, intelligence, dexterity, attack, magicAttack, defense, maxLife, criticRate, magicDefense),
+) : Basic(name, strength, intelligence, dexterity, attack, magicAttack, defense, maxLife, criticRate, magicDefense),
     InterfaceCharacter {
     override fun getStatsInGear(gear: ArrayList<Object>) {
         TODO("Not yet implemented")
