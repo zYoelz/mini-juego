@@ -18,21 +18,23 @@ class Character(
 ) : Basic(name, strength, intelligence, dexterity, attack, magicAttack, defense, maxLife, criticRate, magicDefense),
     InterfaceCharacter {
     override fun getstatsforclass(characterClass: String) {
-        when (characterClass){
-            "Barbarian" ->{
+        when (characterClass) {
+            "Barbarian" -> {
                 strength = 10
                 intelligence = 7
                 dexterity = 8
             }
-            "Rogues" ->{
-                strength= 8
-                intelligence= 7
-                dexterity= 10
+
+            "Rogues" -> {
+                strength = 8
+                intelligence = 7
+                dexterity = 10
             }
-            "Sorcerers"-> {
-                strength=7
-                intelligence=10
-                dexterity=8
+
+            "Sorcerers" -> {
+                strength = 7
+                intelligence = 10
+                dexterity = 8
             }
 
         }

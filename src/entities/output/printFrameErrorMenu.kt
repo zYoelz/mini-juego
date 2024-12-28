@@ -1,4 +1,5 @@
 package entities.output
+
 import config.charPerLine
 
 fun printFrameErrorMenu() {
@@ -6,7 +7,7 @@ fun printFrameErrorMenu() {
     val occupiedLines = 15
     val addStartLines = 0
     val addEndLines = 5
-    val lineaAdd = printFramesStartLines(occupiedLines,addStartLines)
+    val lineaAdd = printFramesStartLines(occupiedLines, addStartLines)
     val length = "+               ¡¡ERROR!! Error fatal Menu ¡¡ERROR!!               +".length
     println(
         "+" + " ".repeat((charPerLine - 2 - length) / 2) + "+".repeat(
@@ -39,7 +40,7 @@ fun printFrameErrorMenu() {
     if (lineaAdd == 1) println(
         "+" + " ".repeat(charPerLine - 2) + "+"
     )
-    printFramesEndLines(occupiedLines,addEndLines)
+    printFramesEndLines(occupiedLines, addEndLines)
 
 
 }

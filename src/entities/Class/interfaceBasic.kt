@@ -3,7 +3,7 @@ package entities.Class
 interface interfaceBasic {
     val name: String
     var strength: Int
-    var intelligence : Int
+    var intelligence: Int
     var dexterity: Int
     var attack: Int
     var magicAttack: Int
@@ -12,12 +12,12 @@ interface interfaceBasic {
     var maxLife: Int
     var criticRate: Int
 
-    fun getAttack (strength: Int)
-    fun getMagicAttack (intelligence: Int)
-    fun getDefense (strength: Int,dexterity: Int)
-    fun getMagicDefense (intelligence: Int,dexterity: Int)
-    fun getMaxLife (strength: Int, intelligence: Int)
-    fun getCriticRate (dexterity: Int)
+    fun getAttack(strength: Int)
+    fun getMagicAttack(intelligence: Int)
+    fun getDefense(strength: Int, dexterity: Int)
+    fun getMagicDefense(intelligence: Int, dexterity: Int)
+    fun getMaxLife(strength: Int, intelligence: Int)
+    fun getCriticRate(dexterity: Int)
 
 
 }

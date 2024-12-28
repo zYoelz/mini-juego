@@ -10,7 +10,7 @@ fun frame3Introduction() {
     val addEndLines = 0
     var length = 0
 
-    val lineaAdd = printFramesStartLines(occupiedLines,addStartLines)
+    val lineaAdd = printFramesStartLines(occupiedLines, addStartLines)
 
     length = "Los primeros experimentos demostraron de forma rápida y concluyente que el compuesto".length
     println(
@@ -24,7 +24,8 @@ fun frame3Introduction() {
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
-    length = "Se descubrió que un compuesto indeterminado de origen extraterrestre reaccionó con el agua salada y".length
+    length =
+        "Se descubrió que un compuesto indeterminado de origen extraterrestre reaccionó con el agua salada y".length
     println(
         "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Se descubrió que un compuesto indeterminado de origen extraterrestre reaccionó con el agua salada y" + " ".repeat(
             (charPerLine - 2 - length) / 2
@@ -36,7 +37,8 @@ fun frame3Introduction() {
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
-    length = "Este compuesto resultante era lo que se acumulaba en las costas y no dejaba de emanar de la zona del hundimiento,".length
+    length =
+        "Este compuesto resultante era lo que se acumulaba en las costas y no dejaba de emanar de la zona del hundimiento,".length
     println(
         "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Este compuesto resultante era lo que se acumulaba en las costas y no dejaba de emanar de la zona del hundimiento," + " ".repeat(
             (charPerLine - 2 - length) / 2
@@ -48,24 +50,25 @@ fun frame3Introduction() {
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
-    length = "No se sabia si tendría consecuencias en el ecosistema pero pronto se confirmo que sí las tenia.".length
+    length = "No se sabia si tendría consecuencias en el ecosistema pero pronto se confirmo que sí.".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "No se sabia si tendría consecuencias en el ecosistema pero pronto se confirmo que sí las tenia. " + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "No se sabia si tendría consecuencias en el ecosistema pero pronto se confirmo que sí." + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
 
-    println( "+" + " ".repeat(charPerLine - 2) + "+" )
+    println("+" + " ".repeat(charPerLine - 2) + "+")
 
     if (lineaAdd == 1) println(
         "+" + " ".repeat(charPerLine - 2) + "+"
     )
-    length = "                                                                Enter para Continuar o 1 para Salir al Menu de Inicio ".length
+    length =
+        "                                                                Enter para Continuar o 1 para Salir al Menu de Inicio ".length
     println(
         "+" + " ".repeat((charPerLine - 2 - length) / 2) + "                                                                Enter para Continuar o 1 para Salir al Menu de Inicio " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
-    printFramesEndLines(occupiedLines,addEndLines)
+    printFramesEndLines(occupiedLines, addEndLines)
 
 }

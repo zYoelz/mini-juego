@@ -3,11 +3,11 @@ package entities.output
 import config.charPerLine
 import config.totalLines
 
-fun printFramesStartLines(occupiedLines:Int,addStartLines:Int):Int{
+fun printFramesStartLines(occupiedLines: Int, addStartLines: Int): Int {
     var lines = totalLines - occupiedLines
-    val rest = lines%2
+    val rest = lines % 2
     var lineaAdd = 0
-    if (rest==0) {
+    if (rest == 0) {
         lines /= 2
 
     } else {
@@ -22,7 +22,7 @@ fun printFramesStartLines(occupiedLines:Int,addStartLines:Int):Int{
     println(
         "+" + " ".repeat(charPerLine - 2) + "+"
     )
-    for (i in 1..lines+addStartLines) {
+    for (i in 1..lines + addStartLines) {
         println(
             "+" + " ".repeat(charPerLine - 2) + "+"
         )

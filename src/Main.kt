@@ -1,6 +1,5 @@
-
 fun main() {
 
-        menuInicio()
+    menuInicio()
 
 }

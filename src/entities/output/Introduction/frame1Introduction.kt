@@ -45,7 +45,8 @@ fun frame1Introduction() {
         ) + "+"
     )
 
-    length = "El liquido no dejaba de salir de la zona de hundimiento del Prestige y las consecuencias pronto se empezaron a notar, ".length
+    length =
+        "El liquido no dejaba de salir de la zona de hundimiento del Prestige y las consecuencias pronto se empezaron a notar, ".length
     println(
         "+" + " ".repeat((charPerLine - 2 - length) / 2) + "El liquido no dejaba de salir de la zona de hundimiento del Prestige y las consecuencias pronto se empezaron a notar, " + " ".repeat(
             (charPerLine - 2 - length) / 2
@@ -59,14 +60,15 @@ fun frame1Introduction() {
         ) + "+"
     )
 
-    println( "+" + " ".repeat(charPerLine - 2) + "+" )
+    println("+" + " ".repeat(charPerLine - 2) + "+")
 
     if (lineaAdd == 1) println(
         "+" + " ".repeat(charPerLine - 2) + "+"
     )
 
 
-    length = "                                                                Enter para Continuar o 1 para Salir al Menu de Inicio ".length
+    length =
+        "                                                                Enter para Continuar o 1 para Salir al Menu de Inicio ".length
     println(
         "+" + " ".repeat((charPerLine - 2 - length) / 2) + "                                                                Enter para Continuar o 1 para Salir al Menu de Inicio " + " ".repeat(
             (charPerLine - 2 - length) / 2
