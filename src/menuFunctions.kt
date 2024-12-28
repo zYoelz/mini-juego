@@ -1,7 +1,7 @@
 import entities.output.printFrameMenu
 import entities.output.printFrameOptionNoValid
 
-fun menu(): Int {
+fun menuFunctions(): Int {
 
     var repeat:Int
     do {

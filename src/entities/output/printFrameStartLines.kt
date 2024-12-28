@@ -3,7 +3,7 @@ package entities.output
 import config.charPerLine
 import config.totalLines
 
-fun printFlamesStartLines(occupiedLines:Int,addStartLines:Int):Int{
+fun printFramesStartLines(occupiedLines:Int,addStartLines:Int):Int{
     var lines = totalLines - occupiedLines
     val rest = lines%2
     var lineaAdd = 0

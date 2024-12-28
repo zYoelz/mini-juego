@@ -1,5 +1,5 @@
-package entities.output
-
+import entities.output.printFramesStartLines
+import entities.output.printFramesEndLines
 import config.charPerLine
 
 fun printFrame() {
@@ -8,7 +8,7 @@ fun printFrame() {
     val addEndLines = 0
     var length = 0
 
-    val lineaAdd = printFlamesStartLines(occupiedLines,addStartLines)
+    val lineaAdd = printFramesStartLines(occupiedLines,addStartLines)
 
     length = " ".length
     println(
@@ -19,6 +19,6 @@ fun printFrame() {
     if (lineaAdd == 1) println(
         "+" + " ".repeat(charPerLine - 2) + "+"
     )
-    printFlamesEndLines(occupiedLines,addEndLines)
+    printFramesEndLines(occupiedLines,addEndLines)
 
-{
+}

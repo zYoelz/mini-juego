@@ -6,8 +6,8 @@ fun printFrameErrorMenu() {
     val occupiedLines = 15
     val addStartLines = 0
     val addEndLines = 5
-    val lineaAdd = printFlamesStartLines(occupiedLines,addStartLines)
-    var length = "+               ¡¡ERROR!! Error fatal Menu ¡¡ERROR!!               +".length
+    val lineaAdd = printFramesStartLines(occupiedLines,addStartLines)
+    val length = "+               ¡¡ERROR!! Error fatal Menu ¡¡ERROR!!               +".length
     println(
         "+" + " ".repeat((charPerLine - 2 - length) / 2) + "+".repeat(
             length

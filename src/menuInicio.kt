@@ -3,28 +3,31 @@ import entities.output.printFrameEnd
 import entities.output.printFrameErrorMenu
 
 fun menuInicio() {
-    val userDecision = menu()
-    when (userDecision) {
-        1 -> {
-            // CONTINUAR
+    var salir = 0
+    do {
+        val userDecision = menuFunctions()
+        when (userDecision) {
+            1 -> {
+                // CONTINUAR
 
+            }
+
+            2 -> {
+                // NUEVA PARTIDA
+                newStart()
+
+            }
+
+            0 -> {
+                printFrameEnd()
+                salir = 1
+            }
+
+            else -> {
+                printFrameErrorMenu()
+                //Variable userDecision no trae los valores esperados de 1 -> Continuar 2-> Nueva Partida o 0 -> Salir
+
+            }
         }
-
-        2 -> {
-            // NUEVA PARTIDA
-            newStart()
-
-        }
-
-        0 -> {
-            printFrameEnd()
-
-        }
-
-        else -> {
-            printFrameErrorMenu()
-            //Variable userDecision no trae los valores esperados de 1 -> Continuar 2-> Nueva Partida o 0 -> Salir
-
-        }
-    }
+    } while (salir != 1)
 }

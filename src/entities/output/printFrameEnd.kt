@@ -6,7 +6,7 @@ fun printFrameEnd() {
     val occupiedLines = 15
     val addStartLines = 0
     val addEndLines = 5
-    val lineaAdd = printFlamesStartLines(occupiedLines,addStartLines)
+    val lineaAdd = printFramesStartLines(occupiedLines,addStartLines)
     val length = "+               ¡¡Adios intrépido aventurero!!               +".length
     println(
         "+" + " ".repeat((charPerLine - 2 - length) / 2) + "+".repeat(

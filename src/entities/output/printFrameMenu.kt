@@ -7,7 +7,7 @@ fun printFrameMenu() {
     val occupiedLines = 15
     val addStartLines = 0
     val addEndLines = 0
-    val lineaAdd = printFlamesStartLines(occupiedLines,addStartLines)
+    val lineaAdd = printFramesStartLines(occupiedLines,addStartLines)
     println(
         "+" + " ".repeat((charPerLine - 2 - "+               Bienvenido a Fisterra's Dungeon              +".length) / 2) + "+".repeat(
             "+               Bienvenido a Fisterra's Dungeon              +".length

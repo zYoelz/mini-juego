@@ -6,8 +6,8 @@ fun printFrameOptionNoValid() {
     val occupiedLines = 15
     val addStartLines = 0
     val addEndLines = 5
-    val lineaAdd = printFlamesStartLines(occupiedLines,addStartLines)
-    var length = "+               ¡¡ERROR!! Opción No valida ¡¡ERROR!!               +".length
+    val lineaAdd = printFramesStartLines(occupiedLines,addStartLines)
+    val length = "+               ¡¡ERROR!! Opción No valida ¡¡ERROR!!               +".length
     println(
         "+" + " ".repeat((charPerLine - 2 - length) / 2) + "+".repeat(
             length
