@@ -4,17 +4,20 @@ import balanceConfig
 
 open class Basic(
     override val name: String,
-    override var strength: Int,
-    override var intelligence: Int,
-    override var dexterity: Int,
-    override var attack: Int,
-    override var magicAttack: Int,
-    override var defense: Int,
-    override var maxLife: Int,
-    override var criticRate: Int,
-    override var magicDefense: Int
+
 
 ) : interfaceBasic {
+
+    override var strength: Int = 0
+    override var intelligence: Int = 0
+    override var dexterity: Int = 0
+    override var attack: Int = 0
+    override var magicAttack: Int = 0
+    override var defense: Int = 0
+    override var maxLife: Int = 0
+    override var criticRate: Int = 0
+    override var magicDefense: Int = 0
+
     override fun getAttack(strength: Int) {
         attack = balanceConfig.attackConfig * strength
     }

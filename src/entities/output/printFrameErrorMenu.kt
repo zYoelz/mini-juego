@@ -41,6 +41,6 @@ fun printFrameErrorMenu() {
         "+" + " ".repeat(charPerLine - 2) + "+"
     )
     printFramesEndLines(occupiedLines, addEndLines)
-
+    Thread.sleep(2000)
 
 }
