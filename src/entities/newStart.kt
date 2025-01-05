@@ -1,35 +1,33 @@
 package entities
 
-import config
-import entities.Class.Character
-import entities.output.Introduction.frameGetClass
-import entities.output.Introduction.frameGetName
-import entities.output.Introduction.printFrameClassNoValid
-import entities.output.Introduction.printFrameNameNoValid
+import entities.adventurer.Character
+import entities.output.introduction.frameGetClass
+import entities.output.introduction.frameGetName
+import entities.output.introduction.printFrameClassNoValid
+import entities.output.introduction.printFrameNameNoValid
 import entities.output.printFramesIntroduction
+import entities.save.saveAdventurer
 
-fun newStart():Character {
+fun newStart(): Character {
 
-    printFramesIntroduction()
+    var totalJoke = printFramesIntroduction()
 
     var end = 0
 
-    config.totalNoValid = 0
-    config.totalJoke=0
-    var charName : String = ""
+    var totalNoValid = 0
+    var charName: String = ""
     do {
 
         frameGetName()
         charName = readlnOrNull() ?: ""
         if (charName.length < 3 || charName.length > 20) {
             printFrameNameNoValid()
-            config.totalNoValid += 1
-            println("${config.totalNoValid}")
-        }
-        else end = 1
+            totalNoValid += 1
+            println("${totalNoValid}")
+        } else end = 1
 
     } while (end != 1)
-    var charClass : String = ""
+    var charClass: String = ""
     do {
 
         frameGetClass()
@@ -52,9 +50,9 @@ fun newStart():Character {
             }
 
             else -> {
-                config.totalNoValid+=1
-                printFrameClassNoValid()
-                println("${config.totalNoValid}")
+                totalNoValid += 1
+                printFrameClassNoValid(totalNoValid, totalJoke)
+                println("${totalNoValid}")
 
             }
 
@@ -62,10 +60,14 @@ fun newStart():Character {
 
     } while (end != 2)
 
-    var adventurous = Character(
+    val adventurer = Character(
         charName,
         charClass
     )
+    println(adventurer)
+    saveAdventurer(adventurer, "adventours.dat")
 
-    return adventurous
+    return adventurer
 }
+
+

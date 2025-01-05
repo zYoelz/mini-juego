@@ -1,18 +1,16 @@
-package entities.output.Introduction
+package entities.output.introduction
 
-import config
 import config.charPerLine
 import entities.output.printFramesEndLines
 import entities.output.printFramesStartLines
-import config.totalJoke as totalJoke1
 
-fun printFrameClassNoValid() {
+fun  printFrameClassNoValid(totalNoValid:Int,totalJoke:Int) {
     var getocupiedLines=9
-    println("total no valid ${config.totalNoValid}")
-    println("total joke ${config.totalJoke}")
-    if (config.totalNoValid > 4)getocupiedLines+=1
-    if (config.totalJoke > 4)getocupiedLines+=1
-    if (config.totalNoValid > 4 && config.totalJoke > 4) getocupiedLines+=1
+    println("total no valid ${totalNoValid}")
+    println("total joke ${totalJoke}")
+    if (totalNoValid > 4)getocupiedLines+=1
+    if (totalJoke > 4)getocupiedLines+=1
+    if (totalNoValid > 4 && totalJoke > 4) getocupiedLines+=1
     val occupiedLines = getocupiedLines
     val addStartLines = 0
     val addEndLines = 0
@@ -37,7 +35,7 @@ fun printFrameClassNoValid() {
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
-    if (config.totalNoValid > 4) {
+    if (totalNoValid > 4) {
         var lengthNovalid = "Te lo digo por que parece que te estrellas en todas las preguntas, ¿sabes leer?".length
         println(
             "+" + " ".repeat((charPerLine - 2 - length) / 2) + "+" + " ".repeat(
@@ -47,7 +45,7 @@ fun printFrameClassNoValid() {
         time+=2000
 
     }
-    if (config.totalJoke > 4) {
+    if (totalJoke > 4) {
         var lengthJoke = "Además deja de escribir tonterías cuando no hace falta, pareces un niño pequeño con un folio en blanco".length
         println(
             "+" + " ".repeat((charPerLine - 2 - length) / 2) + "+".repeat(
@@ -56,7 +54,7 @@ fun printFrameClassNoValid() {
         )
         time+=2000
     }
-    if (config.totalNoValid > 4 && config.totalJoke > 4) {
+    if (totalNoValid > 4 && totalJoke > 4) {
         var lengthNoValidJoke = "menos mal que esta modificación te curará tu tara.".length
         println(
             "+" + " ".repeat((charPerLine - 2 - length) / 2) + "+".repeat(

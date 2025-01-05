@@ -1,4 +1,4 @@
-package entities.output.Introduction
+package entities.output.introduction
 
 import config.charPerLine
 import entities.output.printFramesStartLines
