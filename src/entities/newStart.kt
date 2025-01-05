@@ -6,7 +6,9 @@ import entities.output.introduction.frameGetName
 import entities.output.introduction.printFrameClassNoValid
 import entities.output.introduction.printFrameNameNoValid
 import entities.output.printFramesIntroduction
+import entities.save.Save
 import entities.save.saveAdventurer
+import entities.save.saveControlPoint
 
 fun newStart(): Character {
 
@@ -23,7 +25,6 @@ fun newStart(): Character {
         if (charName.length < 3 || charName.length > 20) {
             printFrameNameNoValid()
             totalNoValid += 1
-            println("${totalNoValid}")
         } else end = 1
 
     } while (end != 1)
@@ -52,8 +53,6 @@ fun newStart(): Character {
             else -> {
                 totalNoValid += 1
                 printFrameClassNoValid(totalNoValid, totalJoke)
-                println("${totalNoValid}")
-
             }
 
         }
@@ -65,7 +64,9 @@ fun newStart(): Character {
         charClass
     )
     println(adventurer)
-    saveAdventurer(adventurer, "adventours.dat")
+    saveAdventurer(adventurer, "adventurer.dat")
+    val save=Save(adventurer,0,0)
+    saveControlPoint(save,"save.dat")
 
     return adventurer
 }

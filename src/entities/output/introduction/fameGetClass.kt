@@ -1,8 +1,8 @@
 package entities.output.introduction
 
-import entities.output.printFramesStartLines
-import entities.output.printFramesEndLines
 import config.charPerLine
+import entities.output.printFramesEndLines
+import entities.output.printFramesStartLines
 
 fun frameGetClass() {
     val occupiedLines = 14 // mínimo 4
@@ -14,13 +14,13 @@ fun frameGetClass() {
 
     length = "Ahora es momento de que elijas las modificaciones genéticas, estas vienen dadas en bloques.".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Ahora es momento de que elijas las modificaciones genéticas, estas vienen dadas en bloques." + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Ahora es momento de que elijas las modificaciones genéticas, estas vienen dadas en bloques. " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
     length = "Podemos dividirlas en clase Barbaro, clase Pícaro o clase Mago.".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Podemos dividirlas en clase Barbaro, clase Pícaro o clase Mago." + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Podemos dividirlas en clase Barbaro, clase Pícaro o clase Mago. " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
@@ -44,7 +44,7 @@ fun frameGetClass() {
     )
     length = "Destreza: 15         Destreza: 20        Destreza: 10        ".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Destreza: 15         Destreza: 20        Destreza: 10        " + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Destreza: 15         Destreza: 20        Destreza: 10         " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
@@ -57,7 +57,7 @@ fun frameGetClass() {
     )
     length = "esto quiere decir básicamente que un humano medio tendría valores de 10 en todas sus estadísticas.".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "esto quiere decir básicamente que un humano medio tendría valores de 10 en todas sus estadísticas. " + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "esto quiere decir básicamente que un humano medio tendría valores de 10 en todas sus estadísticas." + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )

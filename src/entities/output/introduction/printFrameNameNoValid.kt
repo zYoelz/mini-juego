@@ -10,7 +10,7 @@ fun printFrameNameNoValid() {
     val addStartLines = 0
     val addEndLines = 5
     val lineaAdd = printFramesStartLines(occupiedLines, addStartLines)
-    val length = "+               ¡Nombre no valido! Tiene que componerse de entre 3 a 20 letras.               +".length
+    val length = "+               ¡Nombre no valido! Tiene que componerse de entre 3 a 20 letras.                +".length
     println(
         "+" + " ".repeat((charPerLine - 2 - length) / 2) + "+".repeat(
             length
@@ -22,7 +22,7 @@ fun printFrameNameNoValid() {
         ) + "+" + " ".repeat((charPerLine - 2 - length) / 2) + "+"
     )
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "+               ¡Nombre no valido! Tiene que componerse de entre 3 a 20 letras.               +" + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "+               ¡Nombre no valido! Tiene que componerse de entre 3 a 20 letras.                +" + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )

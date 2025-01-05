@@ -1,3 +1,4 @@
+import entities.dungeon.goDungeon
 import entities.newStart
 import entities.output.printFrameEnd
 import entities.output.printFrameErrorMenu
@@ -9,12 +10,14 @@ fun menuInicio() {
         when (userDecision) {
             1 -> {
                 // CONTINUAR
-
+                goDungeon()
             }
 
             2 -> {
                 // NUEVA PARTIDA
                 newStart()
+                goDungeon()
+
 
             }
 

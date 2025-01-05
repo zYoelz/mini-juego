@@ -1,8 +1,8 @@
 package entities.output.introduction
 
-import entities.output.printFramesStartLines
-import entities.output.printFramesEndLines
 import config.charPerLine
+import entities.output.printFramesEndLines
+import entities.output.printFramesStartLines
 
 fun frame3Introduction() {
     val occupiedLines = 13 // mínimo 4
@@ -18,16 +18,16 @@ fun frame3Introduction() {
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
-    length = "no era terrestre.".length
+    length = "no era terrestre. ".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "no era terrestre." + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "no era terrestre. " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
     length =
-        "Se descubrió que un compuesto indeterminado de origen extraterrestre reaccionó con el agua salada y".length
+        "Se descubrió que un compuesto indeterminado de origen extraterrestre reaccionó con el agua salada y ".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Se descubrió que un compuesto indeterminado de origen extraterrestre reaccionó con el agua salada y" + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Se descubrió que un compuesto indeterminado de origen extraterrestre reaccionó con el agua salada y " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
@@ -38,9 +38,9 @@ fun frame3Introduction() {
         ) + "+"
     )
     length =
-        "Este compuesto resultante era lo que se acumulaba en las costas y no dejaba de emanar de la zona del hundimiento,".length
+        "Este compuesto resultante era lo que se acumulaba en las costas y no dejaba de emanar de la zona del hundimiento, ".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Este compuesto resultante era lo que se acumulaba en las costas y no dejaba de emanar de la zona del hundimiento," + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Este compuesto resultante era lo que se acumulaba en las costas y no dejaba de emanar de la zona del hundimiento, " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
@@ -50,9 +50,9 @@ fun frame3Introduction() {
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
-    length = "No se sabia si tendría consecuencias en el ecosistema pero pronto se confirmo que sí.".length
+    length = "No se sabia si tendría consecuencias en el ecosistema pero pronto se confirmo que sí. ".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "No se sabia si tendría consecuencias en el ecosistema pero pronto se confirmo que sí." + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "No se sabia si tendría consecuencias en el ecosistema pero pronto se confirmo que sí. " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )

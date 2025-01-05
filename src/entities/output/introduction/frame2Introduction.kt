@@ -1,9 +1,8 @@
 package entities.output.introduction
 
-import entities.output.printFramesStartLines
-import entities.output.printFramesEndLines
-
 import config.charPerLine
+import entities.output.printFramesEndLines
+import entities.output.printFramesStartLines
 
 fun frame2Introduction() {
     val occupiedLines = 15 // mínimo 4
@@ -13,9 +12,9 @@ fun frame2Introduction() {
 
     val lineaAdd = printFramesStartLines(occupiedLines, addStartLines)
 
-    length = "Desde el primer momento la población civil se lanzo a ayudar en la limpieza y".length
+    length = "Desde el primer momento la población civil se lanzo a ayudar en la limpieza y ".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Desde el primer momento la población civil se lanzo a ayudar en la limpieza y" + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Desde el primer momento la población civil se lanzo a ayudar en la limpieza y " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
@@ -26,9 +25,9 @@ fun frame2Introduction() {
         ) + "+"
     )
     length =
-        "Estas fueron motivadas por la cantidad de contradicciones y bulos difundidas por medios y los representantes políticos.".length
+        "Estas fueron motivadas por la cantidad de contradicciones y bulos difundidas por medios y los representantes políticos. ".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Estas fueron motivadas por la cantidad de contradicciones y bulos difundidas por medios y los representantes políticos." + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Estas fueron motivadas por la cantidad de contradicciones y bulos difundidas por medios y los representantes políticos. " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
@@ -39,9 +38,9 @@ fun frame2Introduction() {
         ) + "+"
     )
     length =
-        "se pensó que fue un accidente aéreo con un compuesto para cambiar el clima o intentar hacer que fuéramos mas dóciles,".length
+        "se pensó que fue un accidente aéreo con un compuesto para cambiar el clima o intentar hacer que fuéramos mas dóciles, ".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "se pensó que fue un accidente aéreo con un compuesto para cambiar el clima o intentar hacer que fuéramos mas dóciles," + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "se pensó que fue un accidente aéreo con un compuesto para cambiar el clima o intentar hacer que fuéramos mas dóciles, " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
@@ -53,15 +52,15 @@ fun frame2Introduction() {
         ) + "+"
     )
     length =
-        "pero la mas llamativa era la ocultación del hundimiento de un petrolero por las cuestionables decisiones de la elite.".length
+        "pero la mas llamativa era la ocultación del hundimiento de un petrolero por las cuestionables decisiones de la elite. ".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "pero la mas llamativa era la ocultación del hundimiento de un petrolero por las cuestionables decisiones de la elite." + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "pero la mas llamativa era la ocultación del hundimiento de un petrolero por las cuestionables decisiones de la elite. " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
-    length = "Todo fue muy divertido pero".length
+    length = "Todo fue muy divertido pero ".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Todo fue muy divertido pero" + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Todo fue muy divertido pero " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )

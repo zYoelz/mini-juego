@@ -1,8 +1,8 @@
 package entities.output.introduction
 
-import entities.output.printFramesStartLines
-import entities.output.printFramesEndLines
 import config.charPerLine
+import entities.output.printFramesEndLines
+import entities.output.printFramesStartLines
 
 
 fun frame4Introduction() {
@@ -13,16 +13,16 @@ fun frame4Introduction() {
 
     val lineaAdd = printFramesStartLines(occupiedLines, addStartLines)
 
-    length = "Paso ya casi un año y las denuncias de vecinos y ganaderos se empezaron a acumular,".length
+    length = "Paso ya casi un año y las denuncias de vecinos y ganaderos se empezaron a acumular, ".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Paso ya casi un año y las denuncias de vecinos y ganaderos se empezaron a acumular," + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Paso ya casi un año y las denuncias de vecinos y ganaderos se empezaron a acumular, " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
     length =
-        ("la desaparición de sus mascotas y el ganado eran los motivos que, al añadirle el reporte de los biólogos,").length
+        ("la desaparición de sus mascotas y el ganado eran los motivos que, al añadirle el reporte de los biólogos, ").length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "la desaparición de sus mascotas y el ganado eran los motivos que, al añadirle el reporte de los biólogos," + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "la desaparición de sus mascotas y el ganado eran los motivos que, al añadirle el reporte de los biólogos, " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
@@ -32,9 +32,9 @@ fun frame4Introduction() {
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
-    length = "Estaban desapareciendo poco a poco los grandes mamíferos de las zonas cercas a la costa y".length
+    length = "Estaban desapareciendo poco a poco los grandes mamíferos de las zonas cercas a la costa y ".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Estaban desapareciendo poco a poco los grandes mamíferos de las zonas cercas a la costa y" + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Estaban desapareciendo poco a poco los grandes mamíferos de las zonas cercas a la costa y " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
@@ -44,15 +44,15 @@ fun frame4Introduction() {
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
-    length = "Las pruebas apuntaban a una suposición en particular, los insectos han crecido.".length
+    length = "Las pruebas apuntaban a una suposición en particular, los insectos han crecido. ".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Las pruebas apuntaban a una suposición en particular, los insectos han crecido." + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Las pruebas apuntaban a una suposición en particular, los insectos han crecido. " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
-    length = "Su corta esperanza de vida y su alta reproducción hizo que las modificaciones genéticas que".length
+    length = "Su corta esperanza de vida y su alta reproducción hizo que las modificaciones genéticas que ".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Su corta esperanza de vida y su alta reproducción hizo que las modificaciones genéticas que" + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "Su corta esperanza de vida y su alta reproducción hizo que las modificaciones genéticas que " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
@@ -68,9 +68,9 @@ fun frame4Introduction() {
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
-    length = "La única solución la ofreció la alianza NUNCA MAIS.".length
+    length = "La única solución la ofreció la alianza NUNCA MAIS. ".length
     println(
-        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "La única solución la ofreció la alianza NUNCA MAIS." + " ".repeat(
+        "+" + " ".repeat((charPerLine - 2 - length) / 2) + "La única solución la ofreció la alianza NUNCA MAIS. " + " ".repeat(
             (charPerLine - 2 - length) / 2
         ) + "+"
     )
